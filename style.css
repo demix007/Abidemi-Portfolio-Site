@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'poppins', 'sans-serif';
+  font-family: poppins, Helvetica, Arial, sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -18,14 +20,14 @@ main {
   height: 718px;
   width: 375px;
   border: 1px solid #ccc;
-  background: #ffffff;
+  background: #fff;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 100%;
 }
 
@@ -42,7 +44,6 @@ nav .container {
   position: relative;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .logo {
@@ -56,11 +57,10 @@ nav .container {
 }
 
 .logo h4 {
-  font-family: poppins;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  color: #6070FF;
+  color: #6070ff;
   display: flex;
   align-items: center;
   text-align: center;
@@ -86,7 +86,7 @@ nav .container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  object-fit: cover; 
+  object-fit: cover;
   margin-block-start: -10px;
 }
 
@@ -108,12 +108,11 @@ nav .container {
 }
 
 .header-title h1 {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #172B4D;
+  color: #172b4d;
   text-align: left;
 }
 
@@ -126,7 +125,6 @@ nav .container {
 }
 
 .header-text p {
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -138,7 +136,6 @@ nav .container {
 .connect {
   width: 119px;
   height: 24px;
-  font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -149,14 +146,11 @@ nav .container {
 .connect a {
   display: inline-block;
   text-decoration: none;
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   text-transform: uppercase;
-  
 }
 
 .header-social-icons {
