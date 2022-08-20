@@ -229,10 +229,35 @@ header {
   margin-top: 2.4rem;
 }
 
+.btn:enabled {
+  background: #f55800;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background: #fff5e1;
+  color: #f55800;
+  box-sizing: border-box;
+}
+
+.btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+  box-sizing: border-box;
+}
+
+.btn:disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  box-sizing: border-box;
+}
+
 .project button {
   margin: 0;
   height: 48px;
-  color: black;
+  width: 100%;
+  color: #fff;
   background: #ff6b00;
   font-family: Inter, sans-serif;
   font-style: normal;
@@ -316,6 +341,7 @@ header {
   background-image: url("img/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: right 0 top 38.5rem;
+  margin-block-end: 2.9rem;
 }
 
 .about-me h2 {
