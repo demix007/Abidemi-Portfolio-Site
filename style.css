@@ -58,23 +58,26 @@ header {
   color: #fff;
   padding-block-start: 12rem;
   background-image: url(./images/headline-illustration.png);
-  background-position: 100% 90%;
+  background-position: 100% 112%;
   background-repeat: no-repeat;
 }
 
 .showcase-title {
-  margin: 1.3rem;
+  margin: 1.2rem;
   font-family: Crete Round, sans-serif, Helvetica;
   font-size: 5.6rem;
   font-weight: 400;
+  font-style: normal;
   line-height: 6.4rem;
   color: #ff6b00;
+  letter-spacing: 0.37px;
 }
 
 .showcase-container h2 {
   font-family: Roboto, sans-serif, Helvetica;
   font-size: 2.4rem;
   font-weight: 700;
+  font-style: normal;
   line-height: 3.2rem;
   display: flex;
   align-items: center;
@@ -88,10 +91,6 @@ header {
   font-weight: 400;
   line-height: 2.4rem;
   margin: 1.2rem;
-}
-
-.social-div {
-  margin-bottom: auto;
 }
 
 .social-icons {
