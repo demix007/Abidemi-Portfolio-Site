@@ -43,6 +43,10 @@ header {
   color: #fff;
 }
 
+.desktop-menu {
+  display: none;
+}
+
 /* Header Styling End */
 
 /* Showcase Section Styling */
@@ -338,7 +342,7 @@ header {
 .about-me {
   display: flex;
   flex-direction: column;
-  background-image: url("img/illustration-about-me-mobile.png");
+  background-image: url("./img/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: right 0 top 38.5rem;
   margin-block-end: 2.9rem;
@@ -490,4 +494,297 @@ footer {
   margin: 2.3rem auto 0.8rem auto;
   margin-bottom: 0.8rem;
   border-radius: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+  .header {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 2rem 10%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  .desktop-menu ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 3.2rem;
+    width: 50%;
+  }
+
+  .desktop-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .showcase-section {
+    display: flex;
+    flex-direction: row;
+    padding-block-start: 0;
+    background-image: url(./img/Illustration-header.png);
+    background-size: 40%;
+    height: 79.8rem;
+  }
+
+  .showcase-container {
+    padding-block-start: 19.2rem;
+    margin-inline-start: 4rem;
+    max-width: 56.6rem;
+  }
+
+  .showcase-title {
+    font-size: 7.2rem;
+    line-height: 8rem;
+    font-weight: 400;
+  }
+
+  .showcase h2 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 4.4rem;
+  }
+
+  .showcase-container p {
+    font-size: 2rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+  }
+
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+    margin: 3.6rem;
+    width: auto;
+  }
+
+  .social-icons li {
+    margin: 0.5rem 0;
+  }
+
+  .my-recent-works {
+    padding-inline-start: 14.1rem;
+    padding-inline-end: 14.3rem;
+  }
+
+  .recent-works-heading {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin-block-start: 13.5rem;
+  }
+
+  .recent-works-title {
+    margin: 0 auto;
+  }
+
+  .multipost-stories {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2rem;
+  }
+
+  .multipost-stories h3 {
+    margin: 0;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2.4rem;
+    margin-bottom: 10rem;
+  }
+
+  .project {
+    height: 43.5rem;
+    width: auto;
+    justify-content: flex-end;
+    margin-block-end: 3.7rem;
+  }
+
+  .project-1 {
+    background-image: url(./img/project-1.png);
+  }
+
+  .project-1 h3,
+  .project-1 p,
+  .project-1 ul {
+    display: none;
+  }
+
+  .project-2 button,
+  .project-3 button,
+  .project-4 button,
+  .project-5 button,
+  .project-6 button {
+    display: none;
+  }
+
+  .project-2 {
+    background-image: url("./img/project-2.png");
+  }
+
+  .project-3 {
+    background-image: url("./img/project-3.png");
+  }
+
+  .project-4 {
+    background-image: url("./img/project-4.png");
+  }
+
+  .project-5 {
+    background-image: url("./img/project-5.png");
+  }
+
+  .project-6 {
+    background-image: url("./img/project-6.png");
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./img/illustration-aboutme.png");
+    background-size: 672.39px 352.38px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    margin-block-end: 2.9rem;
+  }
+
+  .about {
+    padding: 0 10rem;
+  }
+
+  .about-me p {
+    text-align: left;
+    font-size: 2rem;
+    max-width: 56.6rem;
+    line-height: 3.2rem;
+  }
+
+  .about hr {
+    width: 100%;
+  }
+
+  .qualifications {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: baseline;
+    margin-block-end: 14.2rem;
+  }
+
+  .qualifications-title {
+    justify-content: flex-start;
+    margin: 0 0 4.4rem 0;
+    font-size: 3.2rem;
+  }
+
+  .qualifications-title img {
+    margin: 1rem;
+  }
+
+  .qualifications ul {
+    align-items: baseline;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2.4rem;
+    align-items: baseline;
+    padding: 13rem 10rem;
+  }
+
+  .contact-form-title {
+    margin: 0;
+    text-align: left;
+    line-height: 5.2rem;
+    font-size: 4rem;
+    font-weight: 700;
+    max-width: 45.5rem;
+  }
+
+  .form-submit-button {
+    text-align: left;
+  }
+
+  footer {
+    padding-block-start: 2.6rem;
+    padding-block-end: 2.8rem;
+  }
+
+  .footer-hr {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .showcase-section {
+    background-image: url(img/Illustration-header.png);
+    flex-direction: row;
+    height: 79.8rem;
+    padding-block-start: 0;
+  }
+
+  .my-recent-works {
+    padding: 0 14.1rem;
+  }
+
+  .multipost-stories {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-column-gap: 2.4rem;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 2.4rem;
+    padding: 13rem 13.5rem;
+  }
+
+  .contact-form-title {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 0;
+    max-width: 45.5rem;
+  }
+
+  .footer-hr {
+    display: none;
+  }
+}
+
+@media (min-width: 1308px) {
+  .about {
+    background-image: url("img/illustration-aboutme.png");
+    background-size: 67.239rem 35.238rem;
+    background-position: top right;
+    background-position-y: 9.948rem;
+    background-repeat: no-repeat;
+    padding: 0 14.1rem;
+  }
+
+  .about-me {
+    background-image: none;
+  }
 }

@@ -18,6 +18,15 @@
             <nav class="menu-icon">
             <i class="fas fa-bars"></i>
             </nav>
+
+            <nav class="desktop-menu" id="menu">
+                <ul>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                </ul>
+              </nav>
         </header>
         
         <!-- Showcase section -->
@@ -26,47 +35,46 @@
             <section class="showcase-section">
                 <div class="showcase-container">
                     <h1 class="showcase-title">Hey there.<br>I'm Abidemi</h1>
-                    <h2>I am a software Developer</h2>
-                    <p>I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    <h2>I am a software Developer.</h2>
+                    <p>
+                        I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
                     </p>
                 </div>
-                <div class="socia-div">
-                    <ul class="social-icons">
-                        <li class="social-icon">
-                            <a href="#">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#">
-                                <i class="fab fa-angellist"></i>
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="social-icon">
-                            <a href="#">
-                                <i class="fab fa-medium"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="social-icons">
+                    <li class="social-icon">
+                        <a href="#">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#">
+                            <i class="fab fa-angellist"></i>
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </li>
+                </ul>
             </section>
 
             <!--Recent Works Section-->
             
             <section class="my-recent-works">
                 <div class="recent-works-heading">
-                <h2 class="recent-works-title">My Recent Works</h2>
-                <hr class="header-underline">
+                    <h2 class="recent-works-title">My Recent Works</h2>
+                    <hr class="header-underline">
                 </div>
 
                 <div class="my-projects">
@@ -91,7 +99,7 @@
                     </div>
 
                     <ul class="projects">
-                        <li class="project">
+                        <li class="project project-1">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -102,7 +110,7 @@
                             <button type="button" class="btn">See Project</button>
                         </li>
 
-                        <li class="project">
+                        <li class="project project-2">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -113,7 +121,7 @@
                             <button type="button" class="btn">See Project</button>
                         </li>
 
-                        <li class="project">
+                        <li class="project project-3">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -124,7 +132,7 @@
                             <button type="button" class="btn">See Project</button>
                         </li>
 
-                        <li class="project">
+                        <li class="project project-4">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -135,7 +143,7 @@
                             <button type="button" class="btn">See Project</button>
                         </li>
 
-                        <li class="project">
+                        <li class="project project-5">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -146,7 +154,7 @@
                             <button type="button" class="btn">See Project</button>
                         </li>
 
-                        <li class="project">
+                        <li class="project project-6">
                             <h3>Profesional Art<br>Printing Data</h3>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
                             <ul class="build-with">
@@ -215,14 +223,14 @@
                 <div class="contact-form-header">
                     <h3 class="contact-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
                 </div>
-                <form>
+                <form action="https://formspree.io/f/mrgdbpel" method="POST">
                     <div class="contact-inputs">
-                        <input type="text"  placeholder="Full Name">
+                        <input type="text"  id="name" name="name" maxlength="30" placeholder="Full Name" required>
                     </div>
                     <div class="contact-inputs">
-                        <input type="email"  placeholder="Email address">
+                        <input type="email"  id="email" name="email" placeholder="Email address" required>
                     </div>
-                    <textarea class="contact-message"  placeholder="Enter text here"></textarea>
+                    <textarea class="contact-message"  id="message" name="message" maxlength="500" placeholder="Enter text here" required></textarea>
                     <div class="form-submit-button">
                         <button type="submit" id="submit" class="btn">Get in touch</button>
                     </div>
