@@ -788,3 +788,37 @@ footer {
     background-image: none;
   }
 }
+
+@keyframes changecolors {
+  0% {
+    color: white;
+  }
+
+  10% {
+    color: yellow;
+  }
+
+  25% {
+    color: rgb(157, 32, 206);
+  }
+
+  50% {
+    color: rgb(180, 78, 166);
+  }
+
+  65% {
+    color: red;
+  }
+
+  80% {
+    color: rgb(36, 128, 0);
+  }
+
+  95% {
+    color: rgb(0, 41, 128);
+  }
+
+  100% {
+    color: yellow;
+  }
+} 
