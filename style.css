@@ -37,6 +37,8 @@ header {
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #fff;
+  animation-name: changecolors;
+  animation-duration: 10s;
 }
 
 .menu-icon {
@@ -511,6 +513,13 @@ footer {
 
   .logo {
     font-size: 2rem;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    transition-delay: 0.2s;
+  }
+
+  .logo:hover {
+    font-size: 4rem;
   }
 
   .desktop-menu {
@@ -786,5 +795,39 @@ footer {
 
   .about-me {
     background-image: none;
+  }
+}
+
+@keyframes changecolors {
+  0% {
+    color: rgb(109, 25, 25);
+  }
+
+  10% {
+    color: rgb(209, 167, 90);
+  }
+
+  25% {
+    color: rgb(163, 44, 20);
+  }
+
+  40% {
+    color: orange;
+  }
+
+  55% {
+    color: rgb(132, 46, 31);
+  }
+
+  70% {
+    color: rgb(209, 59, 59);
+  }
+
+  85% {
+    color: rgb(134, 32, 49);
+  }
+
+  100% {
+    color: #ff6b00;
   }
 }
