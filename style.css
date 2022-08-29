@@ -37,6 +37,8 @@ header {
   font-size: 1.8rem;
   line-height: 2.4rem;
   color: #fff;
+  animation-name: changecolors;
+  animation-duration: 10s;
 }
 
 .menu-icon {
@@ -511,6 +513,14 @@ footer {
 
   .logo {
     font-size: 2rem;
+    transition-property: font-size;
+    transition-duration: 1.5s;
+    transition-delay: .2s;
+    
+  }
+
+  .logo:hover {
+    font-size: 4rem;
   }
 
   .desktop-menu {
@@ -791,34 +801,35 @@ footer {
 
 @keyframes changecolors {
   0% {
-    color: red;
+    color: rgb(109, 25, 25);
   }
 
   10% {
-    color: green;
+    color: rgb(209, 167, 90);
   }
 
   25% {
-    color: rgb(190, 170, 166);
+    color: rgb(163, 44, 20);
   }
 
-  50% {
-    color: rgb(170, 80, 290);
+  40% {
+    color: orange;
+  }
+
+  55% {
+    color: rgb(132, 46, 31);
   }
 
   70% {
-    color: blue;
+    color: rgb(209, 59, 59);
+
   }
 
-  80% {
-    color: rgb(0, 89, 169);
-  }
-
-  90% {
-    color: rgb(36, 128, 0);
+  85% {
+    color: rgb(134, 32, 49);
   }
 
   100% {
-    color: pink;
+    color: #ff6b00;
   }
 }
