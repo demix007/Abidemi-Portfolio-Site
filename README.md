@@ -10,6 +10,10 @@
 
 - HTML & CSS
 
+## Live Demo
+
+[Live Demo Link](https://demix007.github.io/Portfolio-setup-and-mobile-first/)
+
 👤 **Ayodeji Abidemi**
 
 - GitHub: [@githubhandle](https://github.com/demix007)
