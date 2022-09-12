@@ -9,14 +9,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
     </head>
-    <body>
+    <body class="scroll" id="body">
 
         <!--Header-->
         
         <header class="header">
-            <a href="#" class="logo">Abidemi</a>
+            <a href="#" class="logo" id="my_name">Abidemi</a>
             <nav class="menu-icon">
-            <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" id="bars"></i>
             </nav>
 
             <nav class="desktop-menu" id="menu">
@@ -26,7 +26,7 @@
                   <li><a href="#contact">Contact</a></li>
                   <li><a href="#"><i class="far fa-envelope"></i></a></li>
                 </ul>
-              </nav>
+            </nav>
         </header>
         
         <!-- Showcase section -->
@@ -72,6 +72,7 @@
             <!--Recent Works Section-->
             
             <section class="my-recent-works">
+                <a id="portfolio"></a>
                 <div class="recent-works-heading">
                     <h2 class="recent-works-title">My Recent Works</h2>
                     <hr class="header-underline">
@@ -170,6 +171,7 @@
         
             <!--About Me Section-->
             <section class="about">
+                <a id="about"></a>
                 <div class="about-me">
                     <h2>About me</h2>
                     <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -220,6 +222,7 @@
 
             <!--Contact Form Section-->
             <section class="contact-form">
+                <a id="contact"></a>
                 <div class="contact-form-header">
                     <h3 class="contact-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
                 </div>
@@ -251,5 +254,6 @@
             <div class="footer-hr"></div>
         </footer>
             
+        <script src="js/mobileMenu.js"></script>
     </body>
 </html>
