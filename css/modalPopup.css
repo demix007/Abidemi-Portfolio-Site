@@ -27,13 +27,11 @@ html {
 }
 
 #popup_container {
-  max-width: 1156px;
+  max-width: 115.6rem;
   position: absolute;
   background-color: #fff;
   margin: 4rem 1rem;
   padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 3px 5px rgb(204, 150, 150);
 }
 
 #projectHeader {
