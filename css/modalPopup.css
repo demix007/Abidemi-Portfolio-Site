@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+#modal_container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(17, 15, 15, 0.533);
+  overflow: hidden;
+  z-index: 100;
+}
+
+#popup_container {
+  max-width: 1156px;
+  position: absolute;
+  background-color: #fff;
+  margin: 4rem 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 3px 5px rgb(204, 150, 150);
+}
+
+#projectHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#modalClose {
+  font-size: 2rem;
+}
+
+#modal_project_title {
+  font-family: roboto, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: #1e3e74;
+}
+
+#modalTech {
+  display: flex;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+#modalTech li {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  padding: 1rem;
+  border: 1px solid black;
+  color: #3c3a39;
+  list-style: none;
+}
+
+#image_container {
+  overflow: hidden;
+}
+
+#popupImage {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#modalDesc {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.6rem;
+  color: #344563;
+}
+
+#modalButtons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#modalButtonLive,
+#modalButtonSource {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  padding: 1.2rem;
+  line-height: 2rem;
+  background: #ff6b00;
+  font-weight: bold;
+  border: none;
+  align-self: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+#modalButtonLive i {
+  transform: rotate(40deg);
+}
+
+#modalButtons a {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  #modalDesc {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+}
+
+@media (min-width: 800px) {
+  #modalButtons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #modalButtonLive,
+  #modalButtonSource {
+    margin: 1.2rem;
+  }
+}
+
+@media (min-width: 375px) {
+  #popup_container {
+    padding: 1.6rem;
+    margin: 6rem 1.6rem;
+  }
+
+  #modal_project_title {
+    font-size: 3.2rem;
+    line-height: 4.4rem;
+  }
+
+  #modalTech {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #modalTech li {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    padding: 1rem;
+  }
+
+  #modalDesc {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 420px) {
+  #image_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #modalImage {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 550px) {
+  #modalImage {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 600px) {
+  #modalImage {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  #image_container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1rem;
+  }
+
+  #modalImage {
+    max-width: 100%;
+  }
+
+  #modalDesc {
+    line-height: 3rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  #desc_butt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
