@@ -526,6 +526,15 @@ header {
   text-align: center;
 }
 
+/* Form error Message */
+#contactFormSection p {
+  font-size: 2rem;
+  font-family: roboto, sans-serif;
+  font-weight: 400;
+  margin-bottom: 10rem;
+  color: #4d6795;
+}
+
 /* Footer */
 
 footer {
