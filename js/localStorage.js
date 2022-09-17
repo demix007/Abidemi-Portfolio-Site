@@ -1,8 +1,8 @@
 const formDataContent = {
   available: null,
-  formName: document.getElementById('name'),
-  formEmail: document.getElementById('email'),
-  formMessage: document.getElementById('message'),
+  name: document.getElementById('name'),
+  email: document.getElementById('email'),
+  message: document.getElementById('message'),
   userData: {
     name: null,
     email: null,
@@ -24,23 +24,23 @@ const retrieveStorage = {
   },
 
   attributes() {
-    formDataContent.formName.setAttribute('value', formDataContent.storedObject.formName);
-    formDataContent.formEmail.setAttribute('value', formDataContent.storedObject.formEmail);
-    formDataContent.formMessage.setAttribute('value', formDataContent.storedObject.formMessage);
+    formDataContent.name.setAttribute('value', formDataContent.storedObject.name);
+    formDataContent.email.setAttribute('value', formDataContent.storedObject.email);
+    formDataContent.message.setAttribute('value', formDataContent.storedObject.message);
   },
 
   addEvents() {
     if (formDataContent.available === true) {
-      formDataContent.formName.addEventListener('change', retrieveStorage.store);
-      formDataContent.formEmail.addEventListener('change', retrieveStorage.store);
-      formDataContent.formMessage.addEventListener('change', retrieveStorage.store);
+      formDataContent.name.addEventListener('change', retrieveStorage.store);
+      formDataContent.email.addEventListener('change', retrieveStorage.store);
+      formDataContent.message.addEventListener('change', retrieveStorage.store);
     }
   },
 
   storeData() {
-    formDataContent.userData.name = formDataContent.formName.value;
-    formDataContent.userData.email = formDataContent.formEmail.value;
-    formDataContent.userData.message = formDataContent.formMessage.value;
+    formDataContent.userData.name = formDataContent.name.value;
+    formDataContent.userData.email = formDataContent.email.value;
+    formDataContent.userData.message = formDataContent.message.value;
 
     formDataContent.toStore = JSON.stringify(formDataContent.userData);
     if (formDataContent.storedJson !== formDataContent.toStore) {
