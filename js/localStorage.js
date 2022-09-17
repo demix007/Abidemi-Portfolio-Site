@@ -1,54 +1,35 @@
-const formDataContent = {
-  available: null,
-  name: document.getElementById('name'),
-  email: document.getElementById('email'),
-  message: document.getElementById('message'),
-  userData: {
-    name: null,
-    email: null,
-    message: null,
-  },
-  storedJson: null,
-  storedObject: null,
-  toStore: null,
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const message = document.getElementById('message');
+
+let formData = {
+  name: '',
+  email: '',
+  message: '',
 };
 
-if (window.localStorage) {
-  formDataContent.available = true;
-}
-
-const retrieveStorage = {
-  dataRetrieve() {
-    formDataContent.storedJson = localStorage.getItem('jsonObj');
-    formDataContent.storedObject = JSON.parse(formDataContent.storedJson);
-  },
-
-  attributes() {
-    formDataContent.name.setAttribute('value', formDataContent.storedObject.name);
-    formDataContent.email.setAttribute('value', formDataContent.storedObject.email);
-    formDataContent.message.setAttribute('value', formDataContent.storedObject.message);
-  },
-
-  addEvents() {
-    if (formDataContent.available === true) {
-      formDataContent.name.addEventListener('change', retrieveStorage.store);
-      formDataContent.email.addEventListener('change', retrieveStorage.store);
-      formDataContent.message.addEventListener('change', retrieveStorage.store);
-    }
-  },
-
-  storeData() {
-    formDataContent.userData.name = formDataContent.name.value;
-    formDataContent.userData.email = formDataContent.email.value;
-    formDataContent.userData.message = formDataContent.message.value;
-
-    formDataContent.toStore = JSON.stringify(formDataContent.userData);
-    if (formDataContent.storedJson !== formDataContent.toStore) {
-      window.localStorage.setItem('jsonObj', formDataContent.toStore);
-    }
-  },
+const saveToLocalStorage = () => {
+  localStorage.setItem('form_data', JSON.stringify(formData));
 };
 
-retrieveStorage.dataRetrieve();
-retrieveStorage.attributes();
-retrieveStorage.addEvents();
+name.addEventListener('change', () => {
+  formData.name = name.value;
+  saveToLocalStorage();
+});
+email.addEventListener('change', () => {
+  formData.email = email.value;
+  saveToLocalStorage();
+});
+message.addEventListener('change', () => {
+  formData.message = message.value;
+  saveToLocalStorage();
+});
+
+window.onload = () => {
+  if (localStorage.getItem('form_data') !== null) {
+    formData = JSON.parse(localStorage.getItem('form_data'));
+    name.value = formData.name;
+    email.value = formData.email;
+    message.value = formData.message;
+  }
+};
