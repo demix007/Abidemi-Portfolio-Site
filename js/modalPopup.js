@@ -5,7 +5,7 @@ const projectPopup = {
   projectDescription:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
   aboutProject: null,
-  imageSrc: 'img/popup.jpg',
+  imageSrc: 'img/screenshot1.png',
   popupImage: null,
   projectTechnology: null,
   parent: null,
@@ -115,8 +115,8 @@ const modalPopup = {
     projectPopup.projectSourceButton = document.getElementById('modalButtonSource');
     projectPopup.projectLiveButton.setAttribute('class', 'btn1');
     projectPopup.projectSourceButton.setAttribute('class', 'btn1');
-    projectPopup.projectLiveButton.innerHTML = '   <a href="#">See Live    <i class="fas fa-power-off"></i></a>';
-    projectPopup.projectSourceButton.innerHTML = '   <a href="#">See Source    <i class="fab fa-github"></i></a>';
+    projectPopup.projectLiveButton.innerHTML = '   <a href="https://demix007.github.io/Capstone-Project-Style-Conference/index.html">See Live    <i class="fas fa-power-off"></i></a>';
+    projectPopup.projectSourceButton.innerHTML = '   <a href="https://github.com/demix007/Portfolio-setup-and-mobile-first">See Source    <i class="fab fa-github"></i></a>';
     // stop scroll //
     if (projectPopup.bodyDOM.className === 'scroll') {
       projectPopup.bodyDOM.className = 'no_scroll';
